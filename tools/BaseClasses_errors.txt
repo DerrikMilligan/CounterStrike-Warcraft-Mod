@@ -1,0 +1,170 @@
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 409, in loadModuleAddon
+    newaddon = __import__(importname)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 4, in <module>
+    from tools import BaseClasses
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 292
+    except KeyError e2:
+                     ^
+SyntaxError: invalid syntax
+occurrences: 1
+Last occurrence: 8/14/2013 12:11:08 AM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 409, in loadModuleAddon
+    newaddon = __import__(importname)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 4, in <module>
+    from tools import BaseClasses
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 292
+    except KeyError e2
+                     ^
+SyntaxError: invalid syntax
+occurrences: 1
+Last occurrence: 8/14/2013 12:10:56 AM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 182, in callbackSay
+    cmd_manager.callback(cmd_manager.say_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 113, in tmp
+    es.msg( getattr(wcsPlayer, args[1]) )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 288, in __getattr__
+    raise AttributeError, e
+AttributeError: 'userid'
+occurrences: 1
+Last occurrence: 8/14/2013 12:07:31 AM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 182, in callbackSay
+    cmd_manager.callback(cmd_manager.say_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 112, in tmp
+    es.msg( 'wcsPlayerBase: %s' % bool(wcsPlayer.isdead) )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    # try to get the temp value from the dict
+AttributeError: 'isdead'
+occurrences: 1
+Last occurrence: 8/13/2013 11:54:24 PM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 191, in callbackClient
+    cmd_manager.callback(cmd_manager.client_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 616, in player_ultimate_on
+    ultCast = helper.TriggerStandardEvent( 'player_ultimate', userid, { 'userid': userid } )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\wcsHelper.py", line 126, in TriggerStandardEvent
+    return getattr( race, event )( event_var, skills )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 108, in player_ultimate
+    if ( wcsPlayer.infoZerglingBurrow == False ):
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    raise AttributeError, e
+AttributeError: 'infoZerglingBurrow'
+occurrences: 1
+Last occurrence: 8/13/2013 3:18:30 PM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 191, in callbackClient
+    cmd_manager.callback(cmd_manager.client_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 616, in player_ultimate_on
+    ultCast = helper.TriggerStandardEvent( 'player_ultimate', userid, { 'userid': userid } )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\wcsHelper.py", line 126, in TriggerStandardEvent
+    return getattr( race, event )( event_var, skills )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 112, in player_ultimate
+    self.burrowPosition( wcsPlayer, x, y, z )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 143, in burrowPosition
+    es.server.queuecmd( 'es_xsetpos %s %s %s %s' % ( player.userid, x, y, z ) )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    raise AttributeError, e
+AttributeError: 'userid'
+Occurrences: 2
+Last occurrence: 8/13/2013 3:13:31 PM
+occurrences: 1
+Last occurrence: 8/13/2013 3:13:23 PM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 191, in callbackClient
+    cmd_manager.callback(cmd_manager.client_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 616, in player_ultimate_on
+    ultCast = helper.TriggerStandardEvent( 'player_ultimate', userid, { 'userid': userid } )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\wcsHelper.py", line 126, in TriggerStandardEvent
+    return getattr( race, event )( event_var, skills )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 107, in player_ultimate
+    if ( wcsPlayer.infoZerglingBurrow == False ):
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    raise AttributeError, e
+AttributeError: 'infoZerglingBurrow'
+Occurences: 1
+Last occurrence: 8/13/2013 3:13:11 PM
+occurrences: 1
+Last occurrence: 8/13/2013 3:10:26 PM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 191, in callbackClient
+    cmd_manager.callback(cmd_manager.client_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 616, in player_ultimate_on
+    ultCast = helper.TriggerStandardEvent( 'player_ultimate', userid, { 'userid': userid } )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\wcsHelper.py", line 126, in TriggerStandardEvent
+    return getattr( race, event )( event_var, skills )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 109, in player_ultimate
+    wcsPlayer.freeze( 1 )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    raise AttributeError, e
+AttributeError: 'freeze'
+Occurrences: 2
+Last occurrence: 8/13/2013 3:08:49 PM
+occurrences: 1
+Last occurrence: 8/13/2013 3:08:48 PM
+
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 272, in triggerEvent
+    self.EventListeners[eventname][listener](event_var)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 868, in player_spawn
+    helper.TriggerStandardEvent( 'player_spawn'  , wcsPlayer, ev )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\wcsHelper.py", line 126, in TriggerStandardEvent
+    return getattr( race, event )( event_var, skills )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 46, in player_spawn
+    self.RaceTools.Aura( wcsPlayer, ( 10 - lvl ), self.RegenerationAura, 'regeneration', lvl )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\RaceTools.py", line 230, in Aura
+    self.AuraLoop( wcsPlayer, rate, callbackFunction, name, extraParamaters )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\RaceTools.py", line 237, in AuraLoop
+    if ( extraParamaters ): callbackFunction( wcsPlayer, extraParamaters )
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\races\Zergling.py", line 78, in RegenerationAura
+    if ( wcsPlayer.infoZerglingBurrow ):
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\tools\BaseClasses.py", line 284, in __getattr__
+    raise AttributeError, e
+AttributeError: 'infoZerglingBurrow'
+occurrences: 1
+Last occurrence: 8/13/2013 2:53:06 PM

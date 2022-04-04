@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\es.py", line 344, in callBlock
+    self.Blocks[blockname]()
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 182, in callbackSay
+    cmd_manager.callback(cmd_manager.say_commands, es.getargv(0).lower())
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 112, in callback
+    cmdlist[name].execute(self.CMDArgs(es.getargv(x) for x in xrange(1, es.getargc())))
+  File "C:\srcds - Testing\cstrike\addons\eventscripts\_libs\python\cmdlib.py", line 244, in execute
+    self.callback(userid, args)
+  File "C:\srcds\cstrike\addons\eventscripts\wcs\wcs.py", line 112, in tmp
+    es.msg( getattr(wcsPlayer.player, args[1]) )
+IndexError: list index out of range
+occurrences: 1
+Last occurrence: 8/14/2013 12:31:14 AM
